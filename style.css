@@ -1,0 +1,201 @@
+:root {
+  --my-color: #3498db;
+}
+
+body {
+  font-family: 'Merriweather';
+  margin: 0;
+}
+
+#top {
+  background-color: var(--my-color);
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 30px;
+}
+
+#bottom {
+  background-color: var(--my-color);
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  line-height: 30px;
+  margin-top: 30px;
+}
+
+/* Liên hệ */
+.button-hotline {
+  position: FIXED;
+  top: inherit !important;
+  bottom: 30px;
+  left: 15px;
+  z-index: 99;
+  background: var(--my-color);
+  border-radius: 25px;
+  padding: 5px 10px 5px 5px;
+  border: 15px solid var(--my-color);
+
+}
+
+.button-zalo {
+  position: FIXED;
+  Z-INDEX: 99999;
+  BOTTOM: 15px;
+  right: 10px;
+}
+
+.button-messenger {
+  position: FIXED;
+  Z-INDEX: 99999;
+  BOTTOM: 120px;
+  right: 10px;
+}
+
+h2 {
+  color: var(--my-color);
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+#danhsach_sanpham {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+
+#danhsach_sanpham .sanpham {
+
+  display: block;
+  width: 40%;
+  height: 400px;
+  margin-bottom: 10%;
+  /* border: 1px solid black; */
+}
+
+#danhsach_sanpham .box1 {
+  display: block;
+  width: 100%;
+  height: 65%;
+  /* border: 1px solid green; */
+  box-sizing: border-box;
+}
+
+#danhsach_sanpham .box2 {
+  display: block;
+  width: 100%;
+  height: 35%;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+
+}
+
+#danhsach_sanpham .sanpham img {
+
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+
+
+
+
+
+
+#danhsach_sanpham .sanpham .Noidung1 {
+  margin-top: 5px;
+  text-align: center;
+  color: #f42424;
+
+}
+
+#danhsach_sanpham .sanpham .Noidung2 {
+  text-align: center;
+  color: orange;
+
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+
+#danhsach_sanpham .sanpham .Noidung3 {
+  text-align: center;
+  color: #626a67;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+/* Phóng to ảnh */
+.modal {
+  
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+border: 2px solid green;
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+
+/* Add Animation */
+.modal-content {  
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0.1)} 
+  to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
